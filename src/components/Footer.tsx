@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Footer() {
   return (
     <div className="absolute bottom-0 z-99 mt-auto w-full h-28 flex justify-center items-center">

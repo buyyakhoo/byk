@@ -1,9 +1,3 @@
-import React from 'react'
-
-import TextForBlog from '../../components/TextForBlog'
-
-
-
 import ContactSocial from '../../components/ContactSocial'
 
 function Contact() {
