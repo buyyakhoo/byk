@@ -1,21 +1,28 @@
-// import TextForBlog from '../../components/TextForBlog'
+import Card from "../../components/Card"
+import FrontTitle from "../../components/FrontTitle"
+import { blogData } from "../../Data"
 
 function Blog() {
+
   return (
     <>
-      <div className="h-screen w-full bg-gradient-to-r from-indigo-900 via-blue-900 to-green-900 flex justify-center">
-        <div className="w-5/6 flex flex-col gap-5 justify-center items-center">
-          <h1 className="md:text-9xl sm:text-8xl text-5xl text-amber-200 font-Tiny5">Blog</h1>
-          <h1 className="md:text-3xl sm:text-xl text-md text-center text-amber-300 font-bold">Coming soon </h1>
-        </div>
-      </div>
+      <FrontTitle Title={"Blog"} Description={"The archive of my journey."} />
 
-      {/* <div className="mb-28 pb-10 bg-pink-900 w-full flex justify-center">
-            <div className="md:w-3/6 sm:w-4/6 w-5/6 flex flex-col gap-5">
-
-
+      <div className="mb-28 pb-10 pt-10 w-full flex justify-center">
+            <div className="md:w-5/6 sm:w-5/6 w-5/6 flex flex-row flex-wrap justify-center gap-5">
+              {
+                blogData.map((data) => {
+                  return <Card 
+                    ImageLink={data.ImageLink}
+                    Title={data.Title}
+                    Description={data.Description}
+                    Date={data.Date}
+                    Link={data.Link}
+                  />
+                })
+              }
             </div>
-       </div> */}
+       </div>
     </>
   )
 }

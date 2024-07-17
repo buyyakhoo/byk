@@ -1,20 +1,16 @@
 // import './App.css'
 import TextForBlog from "../../components/TextForBlog";
+import FrontTitle from "../../components/FrontTitle";
 
 function About() {
 
   return (
 
     <>       
+        {/* indigo - blue - green  */}
+        <FrontTitle Title={"Buyyakhoo"} Description={"CS Students"} />
 
-        <div className="h-screen w-full bg-gradient-to-r from-indigo-900 via-blue-900 to-green-900 flex justify-center">
-            <div className="w-5/6 flex flex-col gap-5 justify-center items-center">
-            <h1 className="md:text-9xl sm:text-8xl text-5xl text-amber-200 font-Tiny5">Buyyakhoo</h1>
-            <h1 className="md:text-3xl sm:text-xl text-md text-center text-amber-300 font-bold">CS Students</h1>
-            </div>
-        </div>
-
-        <div className="mb-28 pb-10 bg-pink-900 w-full flex justify-center">
+        <div className="mb-28 pb-10 w-full flex justify-center">
             <div className="md:w-3/6 sm:w-4/6 w-5/6 flex flex-col gap-5">
 
                 <TextForBlog 
@@ -81,16 +77,6 @@ function About() {
                         "and I used to play the instrument (Violin, Piano, Ukulele, Guitar), so I have opportunity to review the " + 
                         "music theory and try to make the music with coding. The other future plan will make the music with coding, " +
                         "and if possible, I want to try with real DAW and any synthesizer."
-                        ]
-                    }
-                />
-
-                <TextForBlog
-                    Title={"I have something want to tell."}
-                    Description={
-                        ["Error code: 0xffffffff",
-                        "I can't say anything about it, but I think we should focus on the present and do the best.",
-                        "buyyakhoo, 2024"
                         ]
                     }
                 />

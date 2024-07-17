@@ -14,7 +14,6 @@ function Contact() {
 
                 <div className="md:w-1/2 w-full md:h-5/6 h-1/2 flex flex-col p-5 gap-5 items-center justify-center">
                     <div>
-
                         <div className="flex flex-col items-center gap-5">
                             <ContactSocial SIcon="github" SLink="https://github.com/buyyakhoo" SUsername="buyyakhoo" />
                             <ContactSocial SIcon="twitter"SLink="https://twitter.com/buyyakhoo" SUsername="buyyakhoo" />

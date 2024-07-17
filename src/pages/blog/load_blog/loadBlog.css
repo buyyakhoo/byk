@@ -1,0 +1,43 @@
+.markdown {
+    font-family: "Roboto Condensed", "IBM Plex Sans Thai", Arial, sans-serif;
+}
+
+.markdown h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: rgb(255, 209, 60);
+    font-weight: bold;
+}
+
+.markdown h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: rgb(255, 209, 60);
+
+}
+
+.markdown p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.markdown a {
+    color: rgb(77, 255, 42);
+    text-decoration: underline;
+}
+
+@media not all and (min-width: 768px) {
+    .markdown h1 {
+        font-size: 2rem;
+    }
+
+    .markdown h2 {
+        font-size: 1.75rem;
+    }
+
+    .markdown p {
+        font-size: 1rem;
+    }
+}
+
+
